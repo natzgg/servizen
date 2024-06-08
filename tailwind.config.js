@@ -9,7 +9,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        baselight: "#8180b2",
+        basenormal: "#565595",
+        basedark: "#1b1a59",
+        basedarker: "#161618",
+      },
+    },
   },
   plugins: [],
 };

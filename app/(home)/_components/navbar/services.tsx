@@ -35,7 +35,7 @@ const Services = () => {
         <span>Services</span>
         <IoIosArrowDown className="group-hover:rotate-180 transition duration-300" />
       </div>
-      <div className="absolute rounded-md opacity-0 group-hover:opacity-100 duration-300 transition p-4 bg-gray-700 w-[250px] -translate-x-7">
+      <div className="absolute rounded-md opacity-0 group-hover:opacity-100 duration-300 transition p-4 bg-basedarker w-[250px] -translate-x-7">
         <ul className="flex text-md flex-col gap-2">
           {services.map((service) => (
             <Link href={service.href}>

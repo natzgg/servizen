@@ -28,7 +28,7 @@ const Navigation = () => {
   };
   return (
     <>
-      <div className="hidden lg:block">
+      <div className="hidden xl:block">
         <ul className="flex gap-6 font-medium text-[17px]">
           <Services />
           {routes.map((route) => (

@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative h-full">
+    <div className="relative mb-20">
       <Extras />
       <div
         data-aos="fade-in"
@@ -23,19 +23,18 @@ const Header = () => {
         className="flex justify-center items-center mt-32 lg:mt-48"
       >
         <div className="flex flex-col items-center">
-          <h2 className="text-red-500 font-medium">
-            Welcome to TaxPro Accelerator
-          </h2>
           <div className="mt-5 space-y-4 flex flex-col items-center justify-center">
-            <h1 className="text-3xl lg:text-4xl font-bold">
-              Grow your tax business
+            <h1 className="text-3xl lg:text-7xl font-bold">
+              Tax Pro Accelerator
             </h1>
-            <p className="text-[#808080] font-medium px-8 md:w-[65%] lg:p-0 text-center text-sm">
-              Software is NOT the business, People is OUR business. We will help
-              you grow your tax business.
+            <p className="text-[#c0c0c8] px-8 max-w-[700px] lg:p-0 text-center text-lg">
+              Software is <b className="text-white">NOT</b> the business, People
+              is <b className="text-white">OUR</b> business. We will help you
+              grow your tax business and provide you all the resources you need
+              to success.
             </p>
-            <HeaderButton />
           </div>
+          <HeaderButton />
         </div>
       </div>
     </div>
