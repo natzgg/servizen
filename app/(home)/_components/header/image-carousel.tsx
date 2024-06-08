@@ -5,8 +5,6 @@ import { motion, useScroll } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const ImageCarousel = () => {
-  const { scrollYProgress } = useScroll();
-
   return (
     <div className="flex flex-col gap-4 mt-5 items-center">
       <motion.ul
@@ -49,8 +47,7 @@ const ImageCarousel = () => {
           transition: { delay: 0.2, duration: 1 },
         }}
         className={cn(
-          "flex gap-4 justify-center items-center w-48 h-48 lg:h-96 lg:w-96",
-          scrollX && "hover:-translate-x-32 transition"
+          "flex gap-4 justify-center items-center w-48 h-48 lg:h-96 lg:w-96"
         )}
       >
         <img
