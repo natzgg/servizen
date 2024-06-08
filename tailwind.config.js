@@ -15,6 +15,7 @@ module.exports = {
         basenormal: "#565595",
         basedark: "#1b1a59",
         basedarker: "#161618",
+        basetext: "#c0c0c8",
       },
     },
   },

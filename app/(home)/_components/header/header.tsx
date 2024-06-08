@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Extras from "./extras";
+import CompanySlider from "./company-slider";
 
 const Header = () => {
   useEffect(() => {
@@ -24,10 +25,10 @@ const Header = () => {
       >
         <div className="flex flex-col items-center">
           <div className="mt-5 space-y-4 flex flex-col items-center justify-center">
-            <h1 className="text-3xl lg:text-7xl font-bold">
+            <h1 className="text-5xl lg:text-7xl font-bold text-wrap text-center">
               Tax Pro Accelerator
             </h1>
-            <p className="text-[#c0c0c8] px-8 max-w-[700px] lg:p-0 text-center text-lg">
+            <p className="text-basetext px-8 max-w-[700px] lg:p-0 text-center text-lg">
               Software is <b className="text-white">NOT</b> the business, People
               is <b className="text-white">OUR</b> business. We will help you
               grow your tax business and provide you all the resources you need
@@ -37,6 +38,7 @@ const Header = () => {
           <HeaderButton />
         </div>
       </div>
+      <CompanySlider />
     </div>
   );
 };
