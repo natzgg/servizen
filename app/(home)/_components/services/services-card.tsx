@@ -15,7 +15,7 @@ const ServicesCard = ({
         </h1>
         <img src={href} className="rounded-t-lg" />
       </div>
-      <p className="text-center text-basetext bg-basedarker rounded-b-lg py-4">
+      <p className="text-center text-basetext bg-basedarker rounded-b-lg p-4">
         {description}
       </p>
     </div>
