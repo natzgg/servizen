@@ -1,6 +1,6 @@
 const HeaderButton = () => {
   return (
-    <div className="ring-2 ring-offset-0 ring-blue-400 rounded-md bg-basenormal mt-10 cursor-pointer">
+    <div className="flex items-center ring-2 ring-offset-0 ring-blue-400 rounded-md bg-basenormal mt-10 cursor-pointer">
       <input
         placeholder="Enter your email"
         className="p-4 focus:outline-none text-black border border-r-0 rounded rounded-r-none"

@@ -38,7 +38,7 @@ const Services = () => {
       <div className="absolute rounded-md opacity-0 group-hover:opacity-100 duration-300 transition p-4 bg-basedarker w-[250px] -translate-x-7">
         <ul className="flex text-md flex-col gap-2">
           {services.map((service) => (
-            <Link href={service.href}>
+            <Link key={service.href} href={service.href}>
               <li key={service.href}>
                 <div className="flex gap-2 items-center">
                   <service.icon className="w-5 h-5" />

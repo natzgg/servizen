@@ -1,28 +1,23 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion, useScroll } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const ImageCarousel = () => {
-  const [scrollX, setScrollX] = useState(0);
+  const { scrollYProgress } = useScroll();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollX(window.scrollX);
-    };
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <div className="flex flex-col gap-4 mt-5 items-center">
-      <ul
+      <motion.ul
+        initial={{ translateX: -100 }}
+        whileInView={{
+          translateX: 0,
+          transition: { delay: 0.1, duration: 1 },
+        }}
+        viewport={{ amount: "some" }}
         className={cn(
-          "flex gap-4 justify-center items-center w-48 h-48 lg:h-96 lg:w-96",
-          scrollX && "hover:-translate-x-32 transition"
+          "flex gap-4 justify-center items-center w-48 h-48 lg:h-96 lg:w-96"
         )}
       >
         <img
@@ -45,9 +40,14 @@ const ImageCarousel = () => {
           src="https://picsum.photos/id/7/600"
           className="rounded-xl object-cover hover:scale-[1.03] duration-500"
         />
-      </ul>
+      </motion.ul>
 
-      <ul
+      <motion.ul
+        initial={{ translateX: 100 }}
+        whileInView={{
+          translateX: 0,
+          transition: { delay: 0.2, duration: 1 },
+        }}
         className={cn(
           "flex gap-4 justify-center items-center w-48 h-48 lg:h-96 lg:w-96",
           scrollX && "hover:-translate-x-32 transition"
@@ -65,7 +65,7 @@ const ImageCarousel = () => {
           src="https://picsum.photos/id/9/600"
           className="rounded-xl object-cover hover:scale-[1.03] duration-500"
         />
-      </ul>
+      </motion.ul>
     </div>
   );
 };

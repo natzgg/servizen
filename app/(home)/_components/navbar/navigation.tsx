@@ -32,7 +32,7 @@ const Navigation = () => {
         <ul className="flex gap-6 font-medium text-[17px]">
           <Services />
           {routes.map((route) => (
-            <Link href={route.href}>
+            <Link key={route.href} href={route.href}>
               <li key={route.href}>
                 <div className="flex gap-2 items-center">
                   <route.icon className="w-5 h-5" />
