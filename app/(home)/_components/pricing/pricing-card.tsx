@@ -6,9 +6,11 @@ const PricingCard = ({
   price,
   features,
   recommended,
+  regular_price,
 }: {
   label: string;
   price: string;
+  regular_price: string;
   features: String[];
   recommended: boolean;
 }) => {
@@ -20,11 +22,17 @@ const PricingCard = ({
       )}
     >
       <div className="flex flex-col w-full">
-        <div className="flex flex-col justify-center items-center p-2 border-white border-b-2 space-y-2 pb-6">
-          <h2 className="text-xl font-semibold">{label}</h2>
-          <h1 className="text-5xl font-bold">${price}</h1>
-          <h3 className="text-basetext">Per year</h3>
+        <div className="flex items-center justify-center border-white border-b-2 gap-2">
+          <span className="line-through text-basetext font-semibold">
+            ${regular_price}
+          </span>
+          <div className="flex flex-col justify-center items-center p-2 space-y-2 pb-6">
+            <h2 className="text-lg font-semibold text-center">{label}</h2>
+            <h1 className="text-5xl font-bold">${price}</h1>
+            <h3 className="text-basetext">Per year</h3>
+          </div>
         </div>
+
         <div className="flex flex-col gap-2 py-4">
           {features.map((feature, i) => (
             <div
@@ -37,7 +45,7 @@ const PricingCard = ({
           ))}
         </div>
       </div>
-      <PricingButton title={label} />
+      <PricingButton title={label} recommended={recommended} />
     </div>
   );
 };
