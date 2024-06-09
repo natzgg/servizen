@@ -45,13 +45,13 @@ const Navigation = () => {
         <div className="lg:hidden relative flex items-center justify-center">
           <IoMdClose
             className={cn(
-              "absolute w-10 h-10 opacity-0 duration-300 transition",
+              "absolute right-0 w-10 h-10 opacity-0 duration-300 transition",
               active && "opacity-100 rotate-180"
             )}
           />
           <PiListBold
             className={cn(
-              "absolute w-10 h-10 opacity-0 duration-300 transition",
+              "absolute right-0 w-10 h-10 opacity-0 duration-300 transition",
               !active && "opacity-100 rotate-180"
             )}
           />
