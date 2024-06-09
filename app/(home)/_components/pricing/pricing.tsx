@@ -2,7 +2,7 @@ import PricingCard from "./pricing-card";
 
 const Pricing = () => {
   return (
-    <div className="flex flex-col gap-10 items-center justify-center mx-auto px-6 mt-20 lg:px-16">
+    <div className="flex flex-col gap-10 items-center justify-center mx-auto px-6 lg:px-16 my-20">
       <div className="flex flex-col gap-2 items-center justify-center">
         <h1 className="font-bold text-3xl">Start your journey today</h1>
         <h2 className="text-basetext">Choose your plan and start now!</h2>
