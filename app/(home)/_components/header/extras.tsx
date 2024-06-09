@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Extras = () => {
   return (
-    <div className="hidden lg:block z-[-1] relative">
+    <div className="hidden lg:block z-[-1]">
       <Image
         className="absolute left-56 brightness-200 -top-10 filter"
         height={150}

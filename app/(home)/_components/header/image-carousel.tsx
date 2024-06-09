@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const ImageCarousel = () => {
@@ -11,7 +10,7 @@ const ImageCarousel = () => {
         initial={{ translateX: -100 }}
         whileInView={{
           translateX: 0,
-          transition: { delay: 0.1, duration: 1 },
+          transition: { delay: 0.1, duration: 1.7 },
         }}
         viewport={{ amount: "some" }}
         className={cn(

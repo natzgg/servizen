@@ -2,30 +2,25 @@
 
 import HeaderButton from "./header-button";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Image from "next/image";
 import Extras from "./extras";
 import CompanySlider from "./company-slider";
+import { motion } from "framer-motion";
 
 const Header = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="relative mb-20">
       <Extras />
-      <div
-        data-aos="fade-in"
-        data-aos-delay="500"
-        data-aos-duration="2000"
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 100,
+          transition: { delay: 0.2, duration: 1 },
+        }}
         className="flex justify-center items-center mt-32 lg:mt-48"
       >
         <div className="flex flex-col items-center">
           <div className="mt-5 space-y-4 flex flex-col items-center justify-center">
-            <h1 className="text-5xl lg:text-7xl font-bold text-wrap text-center p-6">
+            <h1 className="text-5xl lg:text-7xl font-bold text-wrap text-center p-6 text-blue-500">
               Tax Pro Accelerator
             </h1>
             <p className="text-basetext px-8 max-w-[700px] lg:p-0 text-center text-lg">
@@ -37,7 +32,7 @@ const Header = () => {
           </div>
           <HeaderButton />
         </div>
-      </div>
+      </motion.div>
       <CompanySlider />
     </div>
   );
