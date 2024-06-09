@@ -7,8 +7,10 @@ import { usePathname } from "next/navigation";
 import { MdGroups } from "react-icons/md";
 import { GrContact } from "react-icons/gr";
 import { PiListBold } from "react-icons/pi";
+import { IoMdClose } from "react-icons/io";
 
 import Services from "./services";
+import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   const [active, setActive] = useState(false);
@@ -20,11 +22,7 @@ const Navigation = () => {
   ];
 
   const buttonClick = () => {
-    if (active) {
-      setActive(false);
-    } else {
-      setActive(true);
-    }
+    setActive(!active);
   };
   return (
     <>
@@ -43,9 +41,40 @@ const Navigation = () => {
           ))}
         </ul>
       </div>
-      <button onClick={buttonClick} className="lg:hidden relative">
-        <PiListBold className="w-10 h-10" />
-        {active && <div className="absolute">Testing</div>}
+      <button onClick={buttonClick} className="">
+        <div className="lg:hidden relative flex items-center justify-center">
+          <IoMdClose
+            className={cn(
+              "absolute w-10 h-10 opacity-0 duration-300 transition",
+              active && "opacity-100 rotate-180"
+            )}
+          />
+          <PiListBold
+            className={cn(
+              "absolute w-10 h-10 opacity-0 duration-300 transition",
+              !active && "opacity-100 rotate-180"
+            )}
+          />
+        </div>
+        <div
+          className={cn(
+            "absolute p-4 opacity-0 transition duration-300 w-full h-full right-0 -bottom-20",
+            active && "opacity-100"
+          )}
+        >
+          <ul className="bg-basedarker flex flex-col rounded-lg p-4 gap-2">
+            {routes.map((route) => (
+              <>
+                <li key={route.href} className="self-start">
+                  {route.label}
+                </li>
+                <li key={route.href} className="self-start">
+                  Test
+                </li>
+              </>
+            ))}
+          </ul>
+        </div>
       </button>
     </>
   );

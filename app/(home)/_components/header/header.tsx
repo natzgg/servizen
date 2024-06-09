@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div className="relative mb-20">
-      <Extras />
+      {/* <Extras /> */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{
