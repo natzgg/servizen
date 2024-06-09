@@ -2,7 +2,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 const CalendlyButton = () => {
   return (
-    <button className="fixed max-h-12 bottom-5 right-5 z-30 bg-blue-600 text-white py-1 px-3 rounded-lg shadow-white shadow-sm hover:scale-105 duration-300">
+    <button className="fixed h-12 bottom-5 right-5 z-30 bg-blue-600 text-white py-1 px-3 rounded-lg shadow-white shadow-sm hover:scale-105 duration-300">
       <div className="flex items-center gap-2">
         <FaCalendarAlt className="h-max" />
         <div className="flex flex-col items-start">
