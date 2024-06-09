@@ -1,6 +1,8 @@
 import { GoPlus } from "react-icons/go";
 import { cn } from "@/lib/utils";
 import PricingButton from "./pricing-button";
+import { FaRegStar } from "react-icons/fa";
+
 const PricingCard = ({
   label,
   price,
@@ -17,7 +19,7 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        "p-8 rounded-lg bg-basedarker flex flex-col items-center justify-between",
+        "relative p-8 rounded-lg bg-basedarker flex flex-col items-center justify-between",
         recommended && "bg-blue-600"
       )}
     >
@@ -45,6 +47,11 @@ const PricingCard = ({
           ))}
         </div>
       </div>
+      {recommended && (
+        <div className="absolute p-2 rounded-full bg-blue-800 rotate-45 -right-7 top-2 font-semibold">
+          Recommended
+        </div>
+      )}
       <PricingButton title={label} recommended={recommended} />
     </div>
   );

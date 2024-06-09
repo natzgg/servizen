@@ -13,13 +13,13 @@ const PricingButton = ({
     <div className="w-full mt-5">
       <button
         className={cn(
-          "py-3 rounded-lg w-full",
+          "py-3 px-2 rounded-lg w-full",
           recommended
             ? "bg-basedarker"
             : "ring-1 ring-white hover:ring-white/70 duration-300"
         )}
       >
-        <span className="font-semibold text-sm">Choose {title} plan</span>
+        <span className="font-bold uppercase">Choose {title}</span>
       </button>
     </div>
   );
