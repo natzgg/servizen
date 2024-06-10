@@ -10,13 +10,14 @@ const Member = ({ name, imgUrl, position }: MemberProps) => {
   return (
     <div className="p-2">
       <div className="rounded-lg w-full text-white">
-        <div className="flex flex-col gap-2 items-center justify-center p-4">
+        <div className="flex flex-col gap-2 items-center justify-center p-4 w-full h-full">
           <Image
             src={imgUrl}
             alt={name}
-            height={160}
-            width={200}
-            className="rounded-lg"
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-[250px] h-auto rounded-lg object-contain"
           />
 
           <div className="flex flex-col items-center justify-center">

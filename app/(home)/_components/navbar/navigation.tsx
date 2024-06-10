@@ -8,6 +8,7 @@ import { MdGroups } from "react-icons/md";
 import { GrContact } from "react-icons/gr";
 import { PiListBold } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
+import { FaCalendarAlt } from "react-icons/fa";
 
 import Services from "./services";
 import { cn } from "@/lib/utils";
@@ -62,16 +63,11 @@ const Navigation = () => {
             active && "opacity-100"
           )}
         >
-          <ul className="bg-basedarker flex flex-col rounded-lg p-4 gap-2">
+          <ul className="bg-basedarker flex flex-col rounded-lg p-4 gap-2 font-semibold">
             {routes.map((route) => (
-              <>
-                <li key={route.href} className="self-start">
-                  {route.label}
-                </li>
-                <li key={route.href} className="self-start">
-                  Test
-                </li>
-              </>
+              <li key={route.href} className="self-start">
+                <Link href={route.href}>{route.label}</Link>
+              </li>
             ))}
           </ul>
         </div>
