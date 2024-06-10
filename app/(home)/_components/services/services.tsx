@@ -39,12 +39,13 @@ const Services = () => {
 
       {/* Services Card */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 w-full justify-items-center">
-        {services.map((service) => (
+        {services.map((service, index) => (
           <ServicesCard
             key={service.href}
             href={service.href}
             title={service.title}
             description={service.description}
+            index={index}
           />
         ))}
       </div>

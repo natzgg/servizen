@@ -3,7 +3,7 @@ import PricingCard from "./pricing-card";
 const Pricing = () => {
   return (
     <div className="flex flex-col gap-10 items-center justify-center mx-auto px-6 lg:px-16 my-20">
-      <div className="flex flex-col gap-2 items-center justify-center">
+      <div className="flex flex-col gap-2 items-center justify-center text-center">
         <h1 className="font-bold text-3xl">Start your journey today</h1>
         <h2 className="text-basetext">Choose your plan and start now!</h2>
         <h2 className="text-basetext mt-5 font-semibold">
@@ -26,6 +26,7 @@ const Pricing = () => {
             "As low as 0% APR",
           ]}
           recommended={false}
+          index={1}
         />
         <PricingCard
           label="TaxPro Accelerator"
@@ -42,6 +43,7 @@ const Pricing = () => {
             "As low as 0% APR",
           ]}
           recommended={true}
+          index={2}
         />
         <PricingCard
           recommended={false}
@@ -58,6 +60,7 @@ const Pricing = () => {
             "Financing available",
             "As low as 0% APR",
           ]}
+          index={3}
         />
       </div>
     </div>

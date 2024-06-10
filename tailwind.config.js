@@ -16,6 +16,7 @@ module.exports = {
         basedark: "#1b1a59",
         basedarker: "#161618",
         basetext: "#c0c0c8",
+        baseblue: "#3b82f6",
       },
     },
   },

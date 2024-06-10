@@ -16,11 +16,12 @@ const Header = () => {
           opacity: 100,
           transition: { delay: 0.2, duration: 1 },
         }}
+        viewport={{ once: true }}
         className="flex justify-center items-center mt-32 lg:mt-48"
       >
         <div className="flex flex-col items-center">
           <div className="mt-5 space-y-4 flex flex-col items-center justify-center">
-            <h1 className="text-5xl lg:text-7xl font-bold text-wrap text-center p-6 text-blue-500">
+            <h1 className="text-5xl lg:text-7xl font-bold text-wrap text-center p-6 text-baseblue">
               Tax Pro Accelerator
             </h1>
             <p className="text-basetext px-8 max-w-[700px] lg:p-0 text-center text-lg">

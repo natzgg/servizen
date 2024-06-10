@@ -4,7 +4,7 @@ const Stats = () => {
   return (
     <div className="p-4 flex items-center justify-center my-20">
       <div className="flex flex-col gap-6 w-full p-4 items-center justify-center">
-        <h1 className="font-semibold text-2xl text-center">
+        <h1 className="font-semibold text-2xl text-center flex items-center justify-center">
           Trusted by different businesses!
         </h1>
 

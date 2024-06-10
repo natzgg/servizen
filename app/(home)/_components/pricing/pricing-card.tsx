@@ -1,7 +1,9 @@
+"use client";
+
 import { GoPlus } from "react-icons/go";
 import { cn } from "@/lib/utils";
 import PricingButton from "./pricing-button";
-import { FaRegStar } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const PricingCard = ({
   label,
@@ -9,15 +11,21 @@ const PricingCard = ({
   features,
   recommended,
   regular_price,
+  index,
 }: {
   label: string;
   price: string;
   regular_price: string;
   features: String[];
   recommended: boolean;
+  index: number;
 }) => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: "100%" }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7 + index / 6, delay: 0.2 }}
+      viewport={{ once: true }}
       className={cn(
         "relative p-8 rounded-lg bg-basedarker flex flex-col items-center justify-between",
         recommended && "bg-blue-600"
@@ -53,7 +61,7 @@ const PricingCard = ({
         </div>
       )}
       <PricingButton title={label} recommended={recommended} />
-    </div>
+    </motion.div>
   );
 };
 
