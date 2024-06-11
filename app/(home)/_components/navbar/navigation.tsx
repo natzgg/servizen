@@ -59,8 +59,8 @@ const Navigation = () => {
         </div>
         <div
           className={cn(
-            "absolute p-4 opacity-0 transition duration-300 w-full h-full right-0 -bottom-20",
-            active && "opacity-100"
+            "absolute pointer-events-none cursor-default p-4 opacity-0 transition w-full h-full right-0 -bottom-20 duration-300",
+            active && "pointer-events-auto cursor-pointer opacity-100"
           )}
         >
           <ul className="bg-basedarker flex flex-col rounded-lg p-4 gap-2 font-semibold">
