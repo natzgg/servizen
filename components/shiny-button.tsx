@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaCalendarAlt } from "react-icons/fa";
+import { FcCalendar } from "react-icons/fc";
 
 const ShinyButton = () => {
   return (
@@ -29,7 +29,7 @@ const ShinyButton = () => {
         className="py-1 px-3 rounded-lg relative radial-gradient bg-blue-600 shadow-sm shadow-white"
       >
         <div className="flex items-center gap-2 text-white">
-          <FaCalendarAlt />
+          <FcCalendar className="w-6 h-6" />
           <div className="flex flex-col items-start text-neutral-100 h-full w-full relative linear-mask">
             <span className="font-bold text-sm">Book an appointment!</span>
             <span className="italic text-[10px] font-semibold">
