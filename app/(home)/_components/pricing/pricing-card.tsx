@@ -12,6 +12,7 @@ const PricingCard = ({
   recommended,
   regular_price,
   index,
+  href,
 }: {
   label: string;
   price: string;
@@ -19,6 +20,7 @@ const PricingCard = ({
   features: String[];
   recommended: boolean;
   index: number;
+  href: string;
 }) => {
   return (
     <motion.div
@@ -60,7 +62,7 @@ const PricingCard = ({
           Recommended
         </div>
       )}
-      <PricingButton title={label} recommended={recommended} />
+      <PricingButton title={label} recommended={recommended} href={href} />
     </motion.div>
   );
 };

@@ -27,6 +27,7 @@ const Pricing = () => {
           ]}
           recommended={false}
           index={1}
+          href="product/taxproincubator"
         />
         <PricingCard
           label="TaxPro Accelerator"
@@ -44,6 +45,7 @@ const Pricing = () => {
           ]}
           recommended={true}
           index={2}
+          href="product/taxproaccelerator"
         />
         <PricingCard
           recommended={false}
@@ -61,6 +63,7 @@ const Pricing = () => {
             "As low as 0% APR",
           ]}
           index={3}
+          href="product/serviceincubator"
         />
       </div>
     </div>

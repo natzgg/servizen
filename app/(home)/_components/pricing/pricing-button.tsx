@@ -1,16 +1,19 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const PricingButton = ({
   title,
   recommended,
+  href,
 }: {
   title: string;
   recommended: boolean;
+  href: string;
 }) => {
   return (
-    <div className="w-full mt-5">
+    <Link href={href} className="w-full mt-5">
       <button
         className={cn(
           "py-3 px-2 rounded-lg w-full",
@@ -21,7 +24,7 @@ const PricingButton = ({
       >
         <span className="font-bold uppercase">Choose {title}</span>
       </button>
-    </div>
+    </Link>
   );
 };
 
