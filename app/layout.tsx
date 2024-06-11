@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import CalendlyButton from "@/components/calendly-button";
+import ShinyButton from "@/components/shiny-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <CalendlyButton />
+        {/* <CalendlyButton /> */}
+        <ShinyButton />
         {children}
       </body>
     </html>
