@@ -22,13 +22,13 @@ const Header = () => {
         <div className="flex flex-col items-center">
           <div className="mt-5 space-y-4 flex flex-col items-center justify-center">
             <h1 className="text-5xl lg:text-7xl font-bold text-wrap text-center p-6 text-baseblue">
-              Tax Pro Accelerator
+              Service Zen Pro
             </h1>
             <p className="text-basetext px-8 max-w-[700px] lg:p-0 text-center text-lg">
               Software is <b className="text-white">NOT</b> the business, People
               is <b className="text-white">OUR</b> business. We will help you
-              grow your tax business and provide you all the resources you need
-              to success.
+              grow your business and provide you all the resources you need to
+              success.
             </p>
           </div>
           <HeaderButton />

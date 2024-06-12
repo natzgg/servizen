@@ -1,11 +1,8 @@
 import { IconType } from "react-icons";
 import ProductTitle from "./title";
-
-type Feature = {
-  icon: IconType;
-  name: string;
-  description: string;
-};
+import Features from "./features";
+import { Feature } from "@/lib/types";
+import PurchaseButton from "./purchase-button";
 
 type ProductProps = {
   title: string;
@@ -18,6 +15,8 @@ const Product = ({ title, subtitle, features }: ProductProps) => {
     <div>
       <ProductTitle title={title} subtitle={subtitle} />
       {/*Features */}
+      <Features features={features} />
+      <PurchaseButton />
     </div>
   );
 };

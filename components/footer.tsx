@@ -11,7 +11,7 @@ const Footer = () => {
           your marketing, customer capture, and sales.
         </span>
         <FooterLinks />
-        <span className="mt-2">Copyright ©2024 Metaverse Group</span>
+        <span className="mt-2">Copyright ©2024 Nathaniel Cunanan</span>
       </div>
     </div>
   );

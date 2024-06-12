@@ -16,9 +16,9 @@ const Services = () => {
     },
     {
       href: "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "Taxes To Go!",
+      title: "Service To Go!",
       description:
-        "Reach more clients and prepare tax returns in less time. Chat with your clients in real time from within the app.",
+        "Reach more clients and prepare it in less time. Chat with your clients in real time from within the app.",
     },
     {
       href: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

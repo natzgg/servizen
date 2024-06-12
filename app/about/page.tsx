@@ -4,14 +4,19 @@ import AboutTitle from "./_components/title";
 const About = () => {
   const members = [
     {
-      name: "Jose Tollinchi",
-      imgUrl: "/jose.webp",
+      name: "Raymond Stuart",
+      imgUrl: "/ceo.avif",
       position: "Founder & CEO, Software Engineer",
     },
     {
-      name: "Lucy Tollinchi",
-      imgUrl: "/lucy.jpg",
-      position: "Founder & CEO, Trainer",
+      name: "Reyn Sandy",
+      imgUrl: "/raymond.avif",
+      position: "Co-Founder, CTO",
+    },
+    {
+      name: "Dendi Rakiburk",
+      imgUrl: "/dendi.avif",
+      position: "Head of Sales and Marketing",
     },
   ];
   return (

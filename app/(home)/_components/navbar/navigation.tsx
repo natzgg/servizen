@@ -5,10 +5,9 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 import { MdGroups } from "react-icons/md";
-import { GrContact } from "react-icons/gr";
 import { PiListBold } from "react-icons/pi";
 import { IoMdClose } from "react-icons/io";
-import { FaCalendarAlt } from "react-icons/fa";
+import { IoIosHome } from "react-icons/io";
 
 import Services from "./services";
 import { cn } from "@/lib/utils";
@@ -18,8 +17,8 @@ const Navigation = () => {
   const pathname = usePathname();
 
   const routes = [
+    { label: "Home", href: "/", icon: IoIosHome },
     { label: "About Us", href: "/about", icon: MdGroups },
-    { label: "Contact", href: "/contact", icon: GrContact },
   ];
 
   const buttonClick = () => {
@@ -29,7 +28,6 @@ const Navigation = () => {
     <>
       <div className="hidden xl:block">
         <ul className="flex gap-6 font-medium text-[17px]">
-          <Services />
           {routes.map((route) => (
             <Link key={route.href} href={route.href}>
               <li key={route.href}>
@@ -40,6 +38,7 @@ const Navigation = () => {
               </li>
             </Link>
           ))}
+          <Services />
         </ul>
       </div>
       <button onClick={buttonClick} className="">

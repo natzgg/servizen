@@ -12,11 +12,11 @@ const Pricing = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 w-full min-h-full">
         <PricingCard
-          label="TaxPro Incubator"
+          label="Starter"
           price="299"
           regular_price="699"
           features={[
-            "Tax company cloud app",
+            "Cloud app",
             "Free training academy",
             "Branded taxes to go app",
             "Mentorship and marketing training",
@@ -27,14 +27,14 @@ const Pricing = () => {
           ]}
           recommended={false}
           index={1}
-          href="product/taxproincubator"
+          href="product/starter"
         />
         <PricingCard
-          label="TaxPro Accelerator"
+          label="Flex"
           price="1499"
           regular_price="2499"
           features={[
-            "Everything in TaxPro Incubator and:",
+            "Everything in Starter and:",
             "Advanced recruiting",
             "Website & Hosting plan",
             "Stripe checkout",
@@ -45,15 +45,15 @@ const Pricing = () => {
           ]}
           recommended={true}
           index={2}
-          href="product/taxproaccelerator"
+          href="product/flex"
         />
         <PricingCard
           recommended={false}
-          label="Service Incubator"
+          label="Pro"
           price="3499"
           regular_price="4999"
           features={[
-            "Same as TaxPro Accelerator and:",
+            "Same as Flex and:",
             "Software Reseller Cloud App",
             "Build your own network",
             "Advanced recruiting",
@@ -63,7 +63,7 @@ const Pricing = () => {
             "As low as 0% APR",
           ]}
           index={3}
-          href="product/serviceincubator"
+          href="product/pro"
         />
       </div>
     </div>

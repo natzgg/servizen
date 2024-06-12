@@ -7,8 +7,8 @@ import ShinyButton from "@/components/shiny-button";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tax Pro Accelerator",
-  description: "Tax Pro Accelerator",
+  title: "ServiZen",
+  description: "Made by Nathaniel Cunanan",
 };
 
 export default function RootLayout({

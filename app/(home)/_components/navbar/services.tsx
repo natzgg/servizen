@@ -8,24 +8,19 @@ import Link from "next/link";
 const Services = () => {
   const services = [
     {
-      label: "Software Development",
-      href: "/dev",
+      label: "Starter",
+      href: "/product/starter",
       icon: FaDev,
     },
     {
-      label: "Staffing Agency",
-      href: "/staff",
+      label: "Flex",
+      href: "/product/flex",
       icon: IoIosPeople,
     },
     {
-      label: "Hackatons",
-      href: "/hackatons",
+      label: "Pro",
+      href: "/product/pro",
       icon: GrPersonalComputer,
-    },
-    {
-      label: "Non Profit",
-      href: "/nonprofit",
-      icon: FaMoneyBill,
     },
   ];
   return (
@@ -35,7 +30,7 @@ const Services = () => {
         <span>Services</span>
         <IoIosArrowDown className="group-hover:rotate-180 transition duration-300" />
       </div>
-      <div className="absolute rounded-md opacity-0 group-hover:opacity-100 duration-300 transition p-4 bg-basedarker w-[250px] -translate-x-7">
+      <div className="absolute pointer-events-none cursor-default group-hover:pointer-events-auto group-hover:cursor-pointer rounded-md opacity-0 group-hover:opacity-100 duration-300 transition p-4 bg-basedarker w-[250px] -translate-x-7">
         <ul className="flex text-md flex-col gap-2">
           {services.map((service) => (
             <Link key={service.href} href={service.href}>
